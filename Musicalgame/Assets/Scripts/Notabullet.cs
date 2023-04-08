@@ -9,6 +9,8 @@ public class Notabullet : MonoBehaviour
     public AudioSource notaninsesi;
     public GameObject dogruefekt;
     public GameObject yanlisefekt;
+
+    [SerializeField] float damage = 5;
     
     void Start()
     {
@@ -26,5 +28,22 @@ public class Notabullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject); // mermiyi yok et
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage); // düşman canını azalt
+        }
+        else
+        {
+            Destroy(gameObject); // mermiyi yok et
+
+        }
+    }
+
+
 }

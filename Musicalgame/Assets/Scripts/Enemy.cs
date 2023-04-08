@@ -8,7 +8,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform target; // oyuncunun pozisyonu
     [SerializeField] GameObject player;
     private Rigidbody2D rb;
-    
+
+    public float enemyHealth = 20; // Düþmanýn caný
+
 
     void Start()
     {
@@ -36,5 +38,20 @@ public class Enemy : MonoBehaviour
         }
     }
 
-  
+    void Update()
+    {
+      
+    }
+
+
+    public void TakeDamage(float a)
+    {
+       enemyHealth -= a;
+       if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }   
+    }
+
+
 }
