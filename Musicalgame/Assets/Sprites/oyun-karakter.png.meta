@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 5fa24fc57383dbe48999355444b6092b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oyun-karakter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.48278874, y: 0.14697877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501d53368179c1c45a53ff2fb8e3aa60
+      internalID: -1310464725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4885258, y: 0.13792703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b0426e3edb6c546a0d1bc3bf2dd85b
+      internalID: -181397051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5229484, y: 0.15150464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c40d646cd13c3c44aebf0e923321e99
+      internalID: 1069774411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.48278865, y: 0.14697877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6c1db8d919eb441aa05e1b097db3fa
+      internalID: 116738114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_4
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.48278838, y: 0.13792703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01eb6744b4d9ac44a723769fb8e9244
+      internalID: 296131821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_5
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.39673254, y: 0.16055638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b65e1491a1e1f41aba8349fa3e08c9
+      internalID: 1373621614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_6
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.52868366, y: 0.15603027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17286bdb9f52d146b0c064165099e99
+      internalID: 977316175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_7
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4885254, y: 0.16055638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edec951d68136944cba2528de79b5799
+      internalID: -927119566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_8
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 810
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5458962, y: 0.16055638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20930b918fbcab44cb98fafb98334b94
+      internalID: -369959801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bcbab70c6bd654da4fd025c8130efb
+      internalID: 2041477628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217023ae539b32743b3976fe072f3654
+      internalID: -2016680560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d08e338d4fafb44c99aed550f4641ac
+      internalID: 2044833062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_12
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917aaca98b6725843a78c01cbeda90fc
+      internalID: -1436499495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30476e17bbded0f4a8f7fd84f493bce9
+      internalID: 962224865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_14
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac100b85ec1f657428188438af55a112
+      internalID: -664763396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_15
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda3a5ceabdee734a9e1ba6712a6c13b
+      internalID: -727517256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_16
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c16229e701ea214aaefee1ae1690e24
+      internalID: -983617270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_17
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 540
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33129ebf1acbcb4f9f670d468597060
+      internalID: 1667323470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74df8afd2a37ada4495824c16c7bf548
+      internalID: 1798503931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_19
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dcfdb22c7801649abc70987cce5f40
+      internalID: 1348684608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ded95a89f8ab38439f01559cfe4bd35
+      internalID: 1604444207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b612d4e550ea244a6a64101e4409f7
+      internalID: -1726668737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_22
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eed3b3dda3c7f544a064a078e6a9a2b
+      internalID: 1242189647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_23
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c5e7339e7e290478b684fe719f0762
+      internalID: -20497555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_24
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 270
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bfd819f4faa63448362bfd8aba8471
+      internalID: 889193177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_25
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 270
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.52868307, y: 0.4637926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517e2f2892e09f14d9674b472618ffd2
+      internalID: -320182045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_26
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 270
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.52868426, y: 0.445689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b06db1323d58d14399b9f599abfdad1
+      internalID: 1002384739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.48852578, y: 0.49094808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc1eaec352ae194dac83fac14a995a0
+      internalID: -27679144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_28
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da77a55167f70c14f9c481969a026f28
+      internalID: 2127152533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_29
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4885257, y: 0.46379262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4081b3d6aceb1cc46839485f7f8fcf44
+      internalID: -997941737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_30
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4885257, y: 0.44116306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afda1d95a00075246b096efef9012835
+      internalID: 974706313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_31
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.47131434, y: 0.4547408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae358de3f3e345241b7189249c3a48c0
+      internalID: -866987615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_32
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4942627, y: 0.3642226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bbdda5a8e567948a1f333f2bb1618d
+      internalID: 1179907855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_33
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5631075, y: 0.35517076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76c127d2fde42749b296f2722f51339
+      internalID: 656784059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_34
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 0
+        width: 213
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5286848, y: 0.3642226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca063a7efde5a6245b12da7eb20e1a97
+      internalID: 1370216865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun-karakter_35
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 213
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c530a19e09a26df43b23b8301901fa14
+      internalID: -167079262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      oyun-karakter_0: -1310464725
+      oyun-karakter_1: -181397051
+      oyun-karakter_10: -2016680560
+      oyun-karakter_11: 2044833062
+      oyun-karakter_12: -1436499495
+      oyun-karakter_13: 962224865
+      oyun-karakter_14: -664763396
+      oyun-karakter_15: -727517256
+      oyun-karakter_16: -983617270
+      oyun-karakter_17: 1667323470
+      oyun-karakter_18: 1798503931
+      oyun-karakter_19: 1348684608
+      oyun-karakter_2: 1069774411
+      oyun-karakter_20: 1604444207
+      oyun-karakter_21: -1726668737
+      oyun-karakter_22: 1242189647
+      oyun-karakter_23: -20497555
+      oyun-karakter_24: 889193177
+      oyun-karakter_25: -320182045
+      oyun-karakter_26: 1002384739
+      oyun-karakter_27: -27679144
+      oyun-karakter_28: 2127152533
+      oyun-karakter_29: -997941737
+      oyun-karakter_3: 116738114
+      oyun-karakter_30: 974706313
+      oyun-karakter_31: -866987615
+      oyun-karakter_32: 1179907855
+      oyun-karakter_33: 656784059
+      oyun-karakter_34: 1370216865
+      oyun-karakter_35: -167079262
+      oyun-karakter_4: 296131821
+      oyun-karakter_5: 1373621614
+      oyun-karakter_6: 977316175
+      oyun-karakter_7: -927119566
+      oyun-karakter_8: -369959801
+      oyun-karakter_9: 2041477628
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
