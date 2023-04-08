@@ -5,6 +5,10 @@ public class characterController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f; // Hareket h�z�
     private Rigidbody2D rb;//karakter rb
     private Vector2 movement; // hareket vekt�r�
+
+    //Nota degistirme ile ilgili *******************************************************
+    public int suankinota;
+    public GameObject[] notalar;
    
     //ATE� ETME ILE ILGILI ****************************************************************
 
@@ -49,6 +53,7 @@ public class characterController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        bulletPrefab = notalar[0];
     }
 
 
@@ -60,6 +65,7 @@ public class characterController : MonoBehaviour
         speedBoaster();
         healing();
         ultiShoot();
+        Notadegistir();
     }
 
     private void FixedUpdate()
@@ -247,6 +253,19 @@ public class characterController : MonoBehaviour
         {
            TakeDamage(10);
         }
+    }
+    void Notadegistir() {
+        if(Input.GetKeyDown(KeyCode.F)) {
+            if(suankinota == 2) {
+                suankinota = 0;
+                bulletPrefab = notalar[suankinota];
+                
+            }else {
+                suankinota ++;
+                bulletPrefab = notalar[suankinota];
+            }
+        }
+        
     }
 
 
