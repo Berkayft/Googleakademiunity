@@ -379,8 +379,8 @@ GameObject:
   - component: {fileID: 1189177791}
   - component: {fileID: 1189177790}
   - component: {fileID: 1189177789}
-  - component: {fileID: 1189177788}
   - component: {fileID: 1189177792}
+  - component: {fileID: 1189177788}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -401,11 +401,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  heal: 100
   bulletPrefab: {fileID: 8513595210482802425, guid: fd6b6cb952d647c44be0f860e6b9f05a, type: 3}
   firePoint: {fileID: 1189177791}
   bulletSpeed: 40
   fireRate: 0.5
+  speedBoastActive: 0
+  boastSpeed: 20
+  cooldown: 10
+  heal: 100
+  healthPoints: 5
+  ultiBulletPrefab: {fileID: 3247919331477446963, guid: 01696c00ff83ade4d83b3f0170cc44c0, type: 3}
+  ultiBulletSpeed: 0.5
 --- !u!50 &1189177789
 Rigidbody2D:
   serializedVersion: 4
