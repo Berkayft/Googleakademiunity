@@ -51,6 +51,16 @@ public class characterController : MonoBehaviour
     //Hud ile ilgili *********************************************
     public HUDkontrol hud;
 
+    //Hortum yaratma ile ilgili*******************************************
+    private float hortumzaman;
+    public float mainhortumzaman;
+    private float hortumcooldown;
+    public float mainhortumcooldown;
+    private bool ishortuming = false;
+    public GameObject hortum;
+    private bool ishortumcooldowning;
+
+
 
 
 
@@ -58,6 +68,8 @@ public class characterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         bulletPrefab = notalar[0];
+        hortumzaman = mainhortumzaman;
+        hortumcooldown = mainhortumcooldown;
     }
 
 
@@ -70,6 +82,7 @@ public class characterController : MonoBehaviour
         healing();
         ultiShoot();
         Notadegistir();
+        Hortumyarat();
     }
 
     private void FixedUpdate()
@@ -272,6 +285,30 @@ public class characterController : MonoBehaviour
             hud.Hudnotadegistir(suankinota);
         }
         
+    }
+    void Hortumyarat() {
+        if(Input.GetKeyDown(KeyCode.Tab) && ishortumcooldowning == false) {
+            hortum.SetActive(true);
+            AudioSource asx = hortum.gameObject.GetComponent<AudioSource>();
+            asx.Play();
+            ishortuming = true;
+        }
+        if(ishortuming == true) {
+            hortumzaman -= Time.deltaTime;
+            if(hortumzaman < 0) {
+                hortum.SetActive(false);
+                ishortuming = false;
+                ishortumcooldowning = true;
+            }
+        }
+        if(ishortumcooldowning == true) {
+            hortumcooldown -= Time.deltaTime;
+            if(hortumcooldown < 0) {
+                hortumzaman = mainhortumzaman;
+                ishortumcooldowning = false;
+                hortumcooldown = mainhortumcooldown;
+            }
+        }
     }
 
 
