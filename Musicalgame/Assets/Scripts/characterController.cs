@@ -48,6 +48,10 @@ public class characterController : MonoBehaviour
     public GameObject ultiBulletPrefab;
     public float ultiBulletSpeed;
 
+    //Hud ile ilgili *********************************************
+    public HUDkontrol hud;
+
+
 
 
     void Start()
@@ -260,10 +264,12 @@ public class characterController : MonoBehaviour
                 suankinota = 0;
                 bulletPrefab = notalar[suankinota];
                 
+                
             }else {
                 suankinota ++;
                 bulletPrefab = notalar[suankinota];
             }
+            hud.Hudnotadegistir(suankinota);
         }
         
     }
