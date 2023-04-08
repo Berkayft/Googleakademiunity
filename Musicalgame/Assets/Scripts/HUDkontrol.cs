@@ -7,11 +7,10 @@ public class HUDkontrol : MonoBehaviour
 {
     public characterController cc;
     public Animator anim1;
-    public Animation skill1;
     public Animator anim2;
-    public Animation skill2;
     public Animator anim3;
-    public Animation skill3;
+    public Slider healthbar;
+ 
     
 
     // Start is called before the first frame update
@@ -24,5 +23,8 @@ public class HUDkontrol : MonoBehaviour
     void Update()
     {
         //cooldown timerlar public yapıldıktan sonra anim.setBool("iscooling" , cc.cooldown) 
+        anim1.SetBool("Iscooling", cc.isCooldown);
+        // healing ve ulti için gelince buralar yapılacak
+        healthbar.value = cc.heal;
     }
 }

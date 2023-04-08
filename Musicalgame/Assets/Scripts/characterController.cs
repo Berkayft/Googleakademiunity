@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class characterController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f; // Hareket hýzý
+    [SerializeField] private float moveSpeed = 5f; // Hareket hï¿½zï¿½
     private Rigidbody2D rb;//karakter rb
-    private Vector2 movement; // hareket vektörü
+    private Vector2 movement; // hareket vektï¿½rï¿½
    
-    //ATEÞ ETME ILE ILGILI ****************************************************************
+    //ATEï¿½ ETME ILE ILGILI ****************************************************************
 
-    [SerializeField] private GameObject bulletPrefab; // Kurþun prefabý
-    [SerializeField] private Transform firePoint; // Ateþ noktasý
-    [SerializeField] private float bulletSpeed = 10f; // Kurþun hýzý
-    [SerializeField] private float fireRate = 0.5f; // Ateþ hýzý
-    private float nextFireTime = 0f; // Bir sonraki ateþ zamaný
-    private Vector2 target; // hedef - karakterin silahý
+    [SerializeField] private GameObject bulletPrefab; // Kurï¿½un prefabï¿½
+    [SerializeField] private Transform firePoint; // Ateï¿½ noktasï¿½
+    [SerializeField] private float bulletSpeed = 10f; // Kurï¿½un hï¿½zï¿½
+    [SerializeField] private float fireRate = 0.5f; // Ateï¿½ hï¿½zï¿½
+    private float nextFireTime = 0f; // Bir sonraki ateï¿½ zamanï¿½
+    private Vector2 target; // hedef - karakterin silahï¿½
 
 
     //SPEED BOAST ILE ILGILI ******************************************************************
@@ -23,19 +23,19 @@ public class characterController : MonoBehaviour
     private float timer = 0f;
     private float duration = 2f;
     public float cooldown = 10f;
-    private bool isCooldown = false;
+    public bool isCooldown = false;
     private float cooldownTimer = 0f;
 
     //SAGLIKLA ILGILI ****************************************************************************
 
-    [SerializeField] private int heal = 100; // karakterin saðlýk deðeri
-    private int maxHealth = 100; // karakterin maksimum saðlýk deðeri
-    private bool isHealing = false; // iyileþtirme iþleminin devam edip etmediðini belirleyen bool deðiþken
-    private float healAmount = 60f; // bir seferde iyileþtirme miktarý
-    private float healTime = 0f; // iyileþtirme aralýðý
-    private float healTimer = 0f; // iyileþtirme zamanlayýcýsý
-    private float healCooldown = 0f; // iyileþtirme iþleminin bekleme süresi
-    private float healCooldownTimer = 0f; // iyileþtirme iþleminin bekleme zamanlayýcýsý
+    [SerializeField] public int heal = 100; // karakterin saï¿½lï¿½k deï¿½eri
+    private int maxHealth = 100; // karakterin maksimum saï¿½lï¿½k deï¿½eri
+    public bool isHealing = false; // iyileï¿½tirme iï¿½leminin devam edip etmediï¿½ini belirleyen bool deï¿½iï¿½ken
+    private float healAmount = 60f; // bir seferde iyileï¿½tirme miktarï¿½
+    private float healTime = 0f; // iyileï¿½tirme aralï¿½ï¿½ï¿½
+    private float healTimer = 0f; // iyileï¿½tirme zamanlayï¿½cï¿½sï¿½
+    private float healCooldown = 0f; // iyileï¿½tirme iï¿½leminin bekleme sï¿½resi
+    private float healCooldownTimer = 0f; // iyileï¿½tirme iï¿½leminin bekleme zamanlayï¿½cï¿½sï¿½
     public int healthPoints ;
 
 
@@ -67,24 +67,24 @@ public class characterController : MonoBehaviour
         move();
     }
 
-    void shooterTimer()   // Fare sol tuþuna basýlýrsa ve bir sonraki ateþ zamaný gelmiþse
+    void shooterTimer()   // Fare sol tuï¿½una basï¿½lï¿½rsa ve bir sonraki ateï¿½ zamanï¿½ gelmiï¿½se
     {
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
         {
-            Shoot(); // Ateþ et
-            nextFireTime = Time.time + fireRate; // Bir sonraki ateþ zamanýný ayarla
+            Shoot(); // Ateï¿½ et
+            nextFireTime = Time.time + fireRate; // Bir sonraki ateï¿½ zamanï¿½nï¿½ ayarla
         }
     }
-    void Shoot()  // ateþ edioz
+    void Shoot()  // ateï¿½ edioz
     {
-        // Kurþun objesi oluþtur ve hedefe doðru fýrlat
+        // Kurï¿½un objesi oluï¿½tur ve hedefe doï¿½ru fï¿½rlat
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
         Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
         rbBullet.velocity = transform.up * bulletSpeed;
 
     } 
 
-    void movementData() //hareket için gereken datayý alýoz
+    void movementData() //hareket iï¿½in gereken datayï¿½ alï¿½oz
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -105,7 +105,7 @@ public class characterController : MonoBehaviour
         }
     }  
 
-    void takeMousePosition()  // Fare pozisyonunu alýn ve karaktere göre düzeltin
+    void takeMousePosition()  // Fare pozisyonunu alï¿½n ve karaktere gï¿½re dï¿½zeltin
 
     {
         target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -120,22 +120,22 @@ public class characterController : MonoBehaviour
         Debug.Log(heal);
         if (heal <= 0)
         {
-            // Karakter öldüðünde yapýlacak iþlemler
+            // Karakter ï¿½ldï¿½ï¿½ï¿½nde yapï¿½lacak iï¿½lemler
         }
     }
 
-    void speedBoaster() //hýzlanma
+    void speedBoaster() //hï¿½zlanma
     {
-        // Cooldown süresi dolmadan E tuþuna basýlamaz
+        // Cooldown sï¿½resi dolmadan E tuï¿½una basï¿½lamaz
         if (!isCooldown && Input.GetKeyDown(KeyCode.E))
         {
-            // E tuþuna basýldýðýnda bool deðiþkenini true yap
+            // E tuï¿½una basï¿½ldï¿½ï¿½ï¿½nda bool deï¿½iï¿½kenini true yap
             speedBoastActive = !speedBoastActive;
         }
 
         
 
-        // Cooldown süresi dolduðunda isCooldown deðiþkenini false yap
+        // Cooldown sï¿½resi dolduï¿½unda isCooldown deï¿½iï¿½kenini false yap
         if (isCooldown)
         {
             cooldownTimer += Time.deltaTime;
@@ -148,13 +148,13 @@ public class characterController : MonoBehaviour
             }
         }
 
-        // Bool deðiþkeni true olduðunda sayacý artýr
+        // Bool deï¿½iï¿½keni true olduï¿½unda sayacï¿½ artï¿½r
         if (speedBoastActive)
         {
             timer += Time.deltaTime;
             if (timer >= duration)
             {
-                // Süre dolduðunda bool deðiþkenini ve sayacý sýfýrla
+                // Sï¿½re dolduï¿½unda bool deï¿½iï¿½kenini ve sayacï¿½ sï¿½fï¿½rla
                 speedBoastActive = false;
                 timer = 0f;
                 isCooldown = true;
@@ -162,7 +162,7 @@ public class characterController : MonoBehaviour
         }
 
 
-        /*  // E tuþuna basýldýðýnda bool deðiþkenini true yap
+        /*  // E tuï¿½una basï¿½ldï¿½ï¿½ï¿½nda bool deï¿½iï¿½kenini true yap
           if (Input.GetKeyDown(KeyCode.E))
           {
               speedBoastActive = !speedBoastActive;
@@ -170,7 +170,7 @@ public class characterController : MonoBehaviour
 
 
 
-          // Bool deðiþkeni true olduðunda sayacý artýr
+          // Bool deï¿½iï¿½keni true olduï¿½unda sayacï¿½ artï¿½r
           if (speedBoastActive)
           {
               timer += Time.deltaTime;
@@ -190,7 +190,7 @@ public class characterController : MonoBehaviour
             Debug.Log(heal);
             Debug.Log(healthPoints);
 
-            // Q tuþuna basýldýðýnda ve iyileþtirme iþlemi yapma süresi geçmiþse
+            // Q tuï¿½una basï¿½ldï¿½ï¿½ï¿½nda ve iyileï¿½tirme iï¿½lemi yapma sï¿½resi geï¿½miï¿½se
             if (Input.GetKeyDown(KeyCode.Q) && healCooldownTimer <= 0f && heal != 100)
             {
                 isHealing = true;
@@ -198,35 +198,35 @@ public class characterController : MonoBehaviour
 
             }
 
-            // Q tuþu býrakýldýðýnda iyileþtirme iþlemini durdur
+            // Q tuï¿½u bï¿½rakï¿½ldï¿½ï¿½ï¿½nda iyileï¿½tirme iï¿½lemini durdur
             if (Input.GetKeyUp(KeyCode.Q) )
             {
                 isHealing = false;
-                healTimer = 0f; // iyileþtirme zamanlayýcýsýný sýfýrla
+                healTimer = 0f; // iyileï¿½tirme zamanlayï¿½cï¿½sï¿½nï¿½ sï¿½fï¿½rla
             }
 
-            // iyileþtirme iþlemi devam ediyor mu?
+            // iyileï¿½tirme iï¿½lemi devam ediyor mu?
             if (isHealing && heal < maxHealth)
             {
-                healTimer += Time.deltaTime; // zamanlayýcýyý artýr
+                healTimer += Time.deltaTime; // zamanlayï¿½cï¿½yï¿½ artï¿½r
 
-                // iyileþtirme aralýðýna ulaþýldýysa saðlýk deðerini artýr ve zamanlayýcýyý sýfýrla
+                // iyileï¿½tirme aralï¿½ï¿½ï¿½na ulaï¿½ï¿½ldï¿½ysa saï¿½lï¿½k deï¿½erini artï¿½r ve zamanlayï¿½cï¿½yï¿½ sï¿½fï¿½rla
                 if (healTimer >= healTime)
                 {
-                    heal = Mathf.Min(heal + (int)healAmount, maxHealth); // saðlýk deðerini artýrýrken maksimum saðlýk deðerini geçme
+                    heal = Mathf.Min(heal + (int)healAmount, maxHealth); // saï¿½lï¿½k deï¿½erini artï¿½rï¿½rken maksimum saï¿½lï¿½k deï¿½erini geï¿½me
                     healTimer = 0f;
                 }
             }
-            // iyileþtirme iþlemi yapýlmadýysa ve iyileþtirme iþlemi yapma süresi geçtiyse iyileþtirme iþlemini yapma süresini sýfýrla
+            // iyileï¿½tirme iï¿½lemi yapï¿½lmadï¿½ysa ve iyileï¿½tirme iï¿½lemi yapma sï¿½resi geï¿½tiyse iyileï¿½tirme iï¿½lemini yapma sï¿½resini sï¿½fï¿½rla
             else if (healCooldownTimer <= 0f)
             {
                 healCooldownTimer = healCooldown;
             }
 
-            // iyileþtirme iþlemi yapma süresini azalt
+            // iyileï¿½tirme iï¿½lemi yapma sï¿½resini azalt
             healCooldownTimer -= Time.deltaTime;
         }
-    } //Iyileþme
+    } //Iyileï¿½me
     void ultiShoot()
     {
         if (Input.GetKeyDown(KeyCode.Space))
