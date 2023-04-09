@@ -2,32 +2,45 @@ using UnityEngine;
 
 public class Xskill : MonoBehaviour
 {
-    public float fireRate = 60f; // Mermi atýþ hýzý (60 saniyede bir atýþ)
-    private float nextFire = 0.0f; // Bir sonraki atýþ zamaný
-    public Rigidbody2D bulletPrefab; // Mermi örneði
-    public int numBullets = 4; // Toplam mermi sayýsý
-    public float bulletSpeed = 10f; // Mermi hýzý
-
+    public float fireRate; // Mermi atï¿½ï¿½ hï¿½zï¿½ (60 saniyede bir atï¿½ï¿½)
+    private float nextFire = 0.0f; // Bir sonraki atï¿½ï¿½ zamanï¿½
+    public Rigidbody2D bulletPrefab; // Mermi ï¿½rneï¿½i
+    public int numBullets = 4; // Toplam mermi sayï¿½sï¿½
+    public float bulletSpeed = 10f; // Mermi hï¿½zï¿½
+    public float slidervalue;
+    public float cooldownsl;
+    public float maincooldownsl;
+    void Start() {
+        maincooldownsl = fireRate;
+    }
     void Update()
     {
         if (Time.time > nextFire && Input.GetKeyDown(KeyCode.X))
         {
             nextFire = Time.time + fireRate;
+            cooldownsl = 0;
 
-            // Toplam mermi sayýsýna göre mermi örnekleri oluþtur
+            // Toplam mermi sayï¿½sï¿½na gï¿½re mermi ï¿½rnekleri oluï¿½tur
             for (int i = 0; i < numBullets; i++)
             {
                 Rigidbody2D bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                 bullet.AddForce(transform.up * bulletSpeed, ForceMode2D.Impulse); // Mermiye hareket kuvveti uygula
-                bullet.transform.rotation = Quaternion.AngleAxis(360f / numBullets * i, Vector3.forward); // Mermi yönünü hesapla
+                bullet.transform.rotation = Quaternion.AngleAxis(360f / numBullets * i, Vector3.forward); // Mermi yï¿½nï¿½nï¿½ hesapla
 
-                // Her mermiye bir Collider2D bileþeni ekle
+                // Her mermiye bir Collider2D bileï¿½eni ekle
                 CircleCollider2D bulletCollider = bullet.gameObject.AddComponent<CircleCollider2D>();
 
-                // Mermi ömrünü sýnýrla
+                // Mermi ï¿½mrï¿½nï¿½ sï¿½nï¿½rla
                 Destroy(bullet.gameObject, 3f);
             }
         }
+        if(cooldownsl < maincooldownsl) {
+            cooldownsl += Time.deltaTime;
+            
+        }else {
+            cooldownsl = maincooldownsl;
+        }
+        slidervalue = cooldownsl;
     }
 }
 

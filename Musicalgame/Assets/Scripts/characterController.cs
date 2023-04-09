@@ -28,19 +28,16 @@ public class characterController : MonoBehaviour
     private float duration = 2f;
     public float cooldown = 10f;
     public bool isCooldown = false;
-    private float cooldownTimer = 0f;
+    public float cooldownTimer = 10f;
+    
 
     //SAGLIKLA ILGILI ****************************************************************************
 
-    [SerializeField] public int heal = 100; // karakterin sa�l�k de�eri
-    private int maxHealth = 100; // karakterin maksimum sa�l�k de�eri
-    public bool isHealing = false; // iyile�tirme i�leminin devam edip etmedi�ini belirleyen bool de�i�ken
+    [SerializeField] public float heal = 100; // karakterin sa�l�k de�eri
+    private float maxHealth = 100; // karakterin maksimum sa�l�k de�eri
     private float healAmount = 60f; // bir seferde iyile�tirme miktar�
-    private float healTime = 0f; // iyile�tirme aral���
-    private float healTimer = 0f; // iyile�tirme zamanlay�c�s�
-    private float healCooldown = 0f; // iyile�tirme i�leminin bekleme s�resi
-    private float healCooldownTimer = 0f; // iyile�tirme i�leminin bekleme zamanlay�c�s�
     public int healthPoints ;
+    public float healcooldownslider;
 
 
     //ULTI ILE ILGILI ****************************************************************************************
@@ -48,8 +45,10 @@ public class characterController : MonoBehaviour
     public GameObject ultiBulletPrefab;
     public float ultiBulletSpeed;
     private float nextFireTimeUlti = 0.0f;
-    public float fireDelayUlti = 60.0f;
-
+    public float fireDelayUlti;
+    public float ultislider;
+    public float cooldownsl;
+    public float maincooldownsl;
     //Hud ile ilgili *********************************************
     public HUDkontrol hud;
 
@@ -61,6 +60,8 @@ public class characterController : MonoBehaviour
     private bool ishortuming = false;
     public GameObject hortum;
     private bool ishortumcooldowning;
+    public float hortumyaratmaslider;
+    public float gecicihortumyaratmaslider;
 
 
 
@@ -72,6 +73,8 @@ public class characterController : MonoBehaviour
         bulletPrefab = notalar[0];
         hortumzaman = mainhortumzaman;
         hortumcooldown = mainhortumcooldown;
+        nextFireTime = -50f;
+        maincooldownsl = fireDelayUlti;
     }
 
 
@@ -165,11 +168,12 @@ public class characterController : MonoBehaviour
         {
             cooldownTimer += Time.deltaTime;
             Debug.Log(cooldown);
+            
 
             if (cooldownTimer >= cooldown)
             {
                 isCooldown = false;
-                cooldownTimer = 0f;
+                
             }
         }
 
@@ -183,6 +187,7 @@ public class characterController : MonoBehaviour
                 speedBoastActive = false;
                 timer = 0f;
                 isCooldown = true;
+                cooldownTimer = 0f;
             }
         }
 
@@ -195,50 +200,31 @@ public class characterController : MonoBehaviour
         if (healthPoints >0)
         {
             
-            Debug.Log(heal);
-            Debug.Log(healthPoints);
+            
 
             // Q tu�una bas�ld���nda ve iyile�tirme i�lemi yapma s�resi ge�mi�se
-            if (Input.GetKeyDown(KeyCode.Q) && healCooldownTimer <= 0f && heal != 100)
+            if (Input.GetKeyDown(KeyCode.Q) && heal != 100)
             {
-                isHealing = true;
-                healthPoints--;
-
-            }
-
-            // Q tu�u b�rak�ld���nda iyile�tirme i�lemini durdur
-            if (Input.GetKeyUp(KeyCode.Q) )
-            {
-                isHealing = false;
-                healTimer = 0f; // iyile�tirme zamanlay�c�s�n� s�f�rla
-            }
-
-            // iyile�tirme i�lemi devam ediyor mu?
-            if (isHealing && heal < maxHealth)
-            {
-                healTimer += Time.deltaTime; // zamanlay�c�y� art�r
-
-                // iyile�tirme aral���na ula��ld�ysa sa�l�k de�erini art�r ve zamanlay�c�y� s�f�rla
-                if (healTimer >= healTime)
-                {
-                    heal = Mathf.Min(heal + (int)healAmount, maxHealth); // sa�l�k de�erini art�r�rken maksimum sa�l�k de�erini ge�me
-                    healTimer = 0f;
+                float gecicican = heal + healAmount;
+                if(gecicican > maxHealth) {
+                    heal = maxHealth;
+                }else {
+                    heal = gecicican;
                 }
-            }
-            // iyile�tirme i�lemi yap�lmad�ysa ve iyile�tirme i�lemi yapma s�resi ge�tiyse iyile�tirme i�lemini yapma s�resini s�f�rla
-            else if (healCooldownTimer <= 0f)
-            {
-                healCooldownTimer = healCooldown;
+                healthPoints--;
+                heal += 20;
+
             }
 
-            // iyile�tirme i�lemi yapma s�resini azalt
-            healCooldownTimer -= Time.deltaTime;
+            
+            
         }
     } //Iyile�me
     void ultiShoot()
     {
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFireTimeUlti)
         {
+            cooldownsl = 0;
             nextFireTimeUlti = Time.time + fireDelayUlti;
             // 8 yöne doğru birim vektörleri tanımlayalım
             Vector2[] directions = { Vector2.up, Vector2.down, Vector2.right, Vector2.left,
@@ -257,6 +243,13 @@ public class characterController : MonoBehaviour
                 rb.velocity = direction * bulletSpeed;
             }
         }
+        if(cooldownsl < maincooldownsl) {
+            cooldownsl += Time.deltaTime;
+            
+        }else {
+            cooldownsl = maincooldownsl;
+        }
+        ultislider = cooldownsl;
     } //ulti*/
 
     private void OnCollisonEnter2D(Collider2D collision)
@@ -300,6 +293,12 @@ public class characterController : MonoBehaviour
                 ishortumcooldowning = false;
                 hortumcooldown = mainhortumcooldown;
             }
+        }
+        gecicihortumyaratmaslider = Mathf.Abs(hortumcooldown - mainhortumcooldown);
+        if(gecicihortumyaratmaslider == 0) {
+            hortumyaratmaslider = 50;
+        }else {
+            hortumyaratmaslider = gecicihortumyaratmaslider;
         }
     }
 
