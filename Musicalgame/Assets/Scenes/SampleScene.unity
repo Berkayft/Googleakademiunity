@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 172387870}
   - component: {fileID: 172387872}
   - component: {fileID: 172387871}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circlepower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11616,7 +11616,7 @@ GameObject:
   - component: {fileID: 971987848}
   - component: {fileID: 971987850}
   - component: {fileID: 971987849}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circlepower (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17335,7 +17335,7 @@ GameObject:
   - component: {fileID: 1271510432}
   - component: {fileID: 1271510434}
   - component: {fileID: 1271510435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17877,7 +17877,7 @@ GameObject:
   - component: {fileID: 1505243195}
   - component: {fileID: 1505243197}
   - component: {fileID: 1505243196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circlepower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
