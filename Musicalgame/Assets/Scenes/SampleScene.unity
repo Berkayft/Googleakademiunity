@@ -17334,6 +17334,7 @@ GameObject:
   - component: {fileID: 1271510433}
   - component: {fileID: 1271510432}
   - component: {fileID: 1271510434}
+  - component: {fileID: 1271510435}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -17361,7 +17362,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.4411836
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -17469,6 +17470,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   donushizi: 50
   player: {fileID: 1189177787}
+  damage: 10
+--- !u!58 &1271510435
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271510431}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.18258291}
+  serializedVersion: 2
+  m_Radius: 2.141377
 --- !u!1 &1318278045
 GameObject:
   m_ObjectHideFlags: 0
