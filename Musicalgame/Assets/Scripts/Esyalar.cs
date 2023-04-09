@@ -6,12 +6,12 @@ public class Esyalar : MonoBehaviour
 {
     public int esyatipi;
     public string dogrunota; 
-    public GameObject yokolmaanim;
+    
    
 
     void Start()
     {
-        yokolmaanim = null;
+        
     }
 
    

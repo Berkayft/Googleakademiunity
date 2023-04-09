@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4642097718897508699}
   - component: {fileID: 8755700577470823058}
   - component: {fileID: 4017981748490428902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6020246989678848649}
   m_LocalRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.022, y: -0.46, z: -0.19}
+  m_LocalPosition: {x: 0.022, y: -0.46, z: -2}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,7 +226,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.6096754, b: 0, a: 1}
+        key0: {r: 0, g: 0.8300319, b: 1, a: 1}
         key1: {r: 0.564558, g: 0, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -4781,7 +4781,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4826,7 +4826,7 @@ GameObject:
   - component: {fileID: -3335530608837329521}
   - component: {fileID: 3302755217379002555}
   - component: {fileID: 2791194436536743703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Do
   m_TagString: Nota
   m_Icon: {fileID: 0}

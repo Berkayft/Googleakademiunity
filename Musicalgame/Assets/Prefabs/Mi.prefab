@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6042319404438900688}
   - component: {fileID: 7652976355723375641}
   - component: {fileID: 2626749940583903085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,8 +226,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.6096754, b: 0, a: 1}
-        key1: {r: 0.564558, g: 0, b: 1, a: 1}
+        key0: {r: 0.033430457, g: 1, b: 0, a: 1}
+        key1: {r: 0, g: 0.6415094, b: 0.15392923, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4781,7 +4781,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4826,7 +4826,7 @@ GameObject:
   - component: {fileID: 4756780522267521796}
   - component: {fileID: 4495459276088657456}
   - component: {fileID: 4523079756507352039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mi
   m_TagString: Nota
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5589554347059053352}
   - component: {fileID: 8393691688671852769}
   - component: {fileID: 4196405197431235477}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,8 +226,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.6096754, b: 0, a: 1}
-        key1: {r: 0.564558, g: 0, b: 1, a: 1}
+        key0: {r: 1, g: 0.010436682, b: 0, a: 1}
+        key1: {r: 0.5660378, g: 0, b: 0.1252197, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4781,7 +4781,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4826,7 +4826,7 @@ GameObject:
   - component: {fileID: 6650635512085577724}
   - component: {fileID: 2318125690136431304}
   - component: {fileID: 8465408860650158561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Re
   m_TagString: Nota
   m_Icon: {fileID: 0}

@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: b02be0679609db84d8c4ca36b24f62ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_0"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6884bec8672464e438c3164bfdf74b23
+      internalID: 929260096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_1"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 193
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652f35ae0a1dd5440a2daff9bcf3ddfd
+      internalID: 1944918597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_2"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 179
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73c549c29b69df48933f9801f443dc4
+      internalID: 257568317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_3"
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 180
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6389c2bafea8cb1449e8d883a47d2a0b
+      internalID: -1091463489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_4"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 180
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d50889fa2c90240937f04f4d4e30af
+      internalID: 2008643727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_5"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 94
+        width: 88
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42cec848a48ee54ab89b422430510fd
+      internalID: -1891188020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_6"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 153
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2146b8d5a8f57746a08c2ada0f336c3
+      internalID: -1215615945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_7"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 133
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db33f50bb8785374eb4c57bfdcb2139f
+      internalID: -2457079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_8"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 130
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990736e8444754a44b42c9a7a5ebfd2e
+      internalID: -282223553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_9"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 130
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4193f7c3b32960444886d8d288fe1e9d
+      internalID: 865333187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_10"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 114
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b2a139b5572a24298694daef7d881e
+      internalID: 1214963851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_11"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 96
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f273eab7ca166914f9d750b19872cbb5
+      internalID: -1232324635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_12"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 96
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5999e6f2d965e345b54eacfaa79749e
+      internalID: -1770312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_13"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 65
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2c9d63eec4a834c814aec20edaafec
+      internalID: 539123057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_14"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 65
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8531172e5cb82340a15077a0413981b
+      internalID: -1270987278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_15"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 72
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133c784f5b0440b43814f5667d9a721b
+      internalID: 1280603000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_16"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 72
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8d49fcd641fad4789f7509747f87de
+      internalID: 617105369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_17"
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 72
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9ddaa9c92d7c8459541d82f1d1e61d
+      internalID: 1895441100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_18"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 72
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6207d8e0ae0fbf54c8cd1c951c3ea6fd
+      internalID: 1507275417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_19"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 31
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5167d7bc30c71a14d8b9dd519fe6f9aa
+      internalID: -1886851134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_20"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15df985404b8a5419700bec84162b33
+      internalID: 1964984672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_21"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591e70b0c8e67045881f9a4095777ed
+      internalID: -239570849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_22"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 32
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb223c220d8a17146b813e4365a64bb0
+      internalID: 319461374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_23"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 32
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082c8aa64986e464dbaa522d67b5a0dd
+      internalID: 931855507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0130\xE7mekan_Asset_24"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 32
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3daffa8fe7d0946b6cba7806c058dc
+      internalID: 333722298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "\u0130\xE7mekan_Asset_0": 929260096
+      "\u0130\xE7mekan_Asset_1": 1944918597
+      "\u0130\xE7mekan_Asset_10": 1214963851
+      "\u0130\xE7mekan_Asset_11": -1232324635
+      "\u0130\xE7mekan_Asset_12": -1770312
+      "\u0130\xE7mekan_Asset_13": 539123057
+      "\u0130\xE7mekan_Asset_14": -1270987278
+      "\u0130\xE7mekan_Asset_15": 1280603000
+      "\u0130\xE7mekan_Asset_16": 617105369
+      "\u0130\xE7mekan_Asset_17": 1895441100
+      "\u0130\xE7mekan_Asset_18": 1507275417
+      "\u0130\xE7mekan_Asset_19": -1886851134
+      "\u0130\xE7mekan_Asset_2": 257568317
+      "\u0130\xE7mekan_Asset_20": 1964984672
+      "\u0130\xE7mekan_Asset_21": -239570849
+      "\u0130\xE7mekan_Asset_22": 319461374
+      "\u0130\xE7mekan_Asset_23": 931855507
+      "\u0130\xE7mekan_Asset_24": 333722298
+      "\u0130\xE7mekan_Asset_3": -1091463489
+      "\u0130\xE7mekan_Asset_4": 2008643727
+      "\u0130\xE7mekan_Asset_5": -1891188020
+      "\u0130\xE7mekan_Asset_6": -1215615945
+      "\u0130\xE7mekan_Asset_7": -2457079
+      "\u0130\xE7mekan_Asset_8": -282223553
+      "\u0130\xE7mekan_Asset_9": 865333187
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
