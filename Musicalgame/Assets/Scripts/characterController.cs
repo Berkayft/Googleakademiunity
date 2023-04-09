@@ -139,7 +139,7 @@ public class characterController : MonoBehaviour
         
     }
 
-    void TakeDamage(int damage) // hasar alma
+    public void TakeDamage(int damage) // hasar alma
     {
         heal -= damage;
         Debug.Log(heal);
@@ -259,12 +259,9 @@ public class characterController : MonoBehaviour
         }
     } //ulti*/
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisonEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-           TakeDamage(10);
-        }
+        
     }
     void Notadegistir() {
         if(Input.GetKeyDown(KeyCode.F)) {
