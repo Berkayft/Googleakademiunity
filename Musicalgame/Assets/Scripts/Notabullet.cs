@@ -36,7 +36,7 @@ public class Notabullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject); // mermiyi yok et
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage); // düşman canını azalt
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage,notaninismi); // düşman canını azalt
         }
         else
         {

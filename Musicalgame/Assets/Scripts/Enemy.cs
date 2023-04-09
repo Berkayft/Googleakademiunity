@@ -2,14 +2,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3f; // düþmanýn hýzý
-    public int damage = 1; // düþmanýn verdiði hasar
+    public float speed = 3f; // dï¿½ï¿½manï¿½n hï¿½zï¿½
+    public int damage = 1; // dï¿½ï¿½manï¿½n verdiï¿½i hasar
 
     [SerializeField] Transform target; // oyuncunun pozisyonu
     [SerializeField] GameObject player;
     private Rigidbody2D rb;
 
-    public float enemyHealth = 20; // Düþmanýn caný
+    public float enemyHealth = 20; // Dï¿½ï¿½manï¿½n canï¿½
+
+    public int dusmantipi;
+    public float maksuzaklik;
+    public Transform spawnpoint;
 
 
     void Start()
@@ -23,19 +27,18 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 direction = target.position - rb.transform.position; // oyuncuya doðru yön
-        rb.velocity = direction.normalized * speed; // hýzý ayarla
-
-        // düþmanýn yüzünü doðru yöne döndür
-        if (direction.x > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (direction.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
+        Vector2 direction = target.position - rb.transform.position; // oyuncuya doï¿½ru yï¿½n
+        if(direction.magnitude > maksuzaklik){
+            Vector2 gotospawnpoint = transform.position - rb.transform.position;
+            rb.velocity = gotospawnpoint.normalized * speed;
+        }else {
+            float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
+            rb.rotation = angle - 90f;
+            rb.velocity = direction.normalized * speed; // hï¿½zï¿½ ayarla
             
         }
+
+        
     }
 
     void Update()
@@ -44,9 +47,20 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void TakeDamage(float a)
+    public void TakeDamage(float a,string isim)
     {
-       enemyHealth -= a;
+       if(dusmantipi == 0) {
+          enemyHealth -= a;
+       }else if(dusmantipi == 1 && isim == "Do"){
+          enemyHealth -= a;   
+       }else if(dusmantipi == 2 && isim == "Re") {
+          enemyHealth -= a;
+       }else if(dusmantipi == 3 && isim == "Mi") {
+          enemyHealth -= a;  
+       }else if(isim == "Sol") {
+          enemyHealth -= a;
+       }
+       
        if (enemyHealth <= 0)
         {
             Destroy(gameObject);

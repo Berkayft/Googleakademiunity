@@ -4934,7 +4934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1ae6df83742bc49bc38883e1d216d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notaninismi: 
+  notaninismi: Mi
   destroysayac: 5
   notaninsesi: {fileID: 0}
   dogruefekt: {fileID: 0}
