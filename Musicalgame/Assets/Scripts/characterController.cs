@@ -47,6 +47,8 @@ public class characterController : MonoBehaviour
 
     public GameObject ultiBulletPrefab;
     public float ultiBulletSpeed;
+    private float nextFireTimeUlti = 0.0f;
+    public float fireDelayUlti = 60.0f;
 
     //Hud ile ilgili *********************************************
     public HUDkontrol hud;
@@ -185,25 +187,8 @@ public class characterController : MonoBehaviour
         }
 
 
-        /*  // E tu�una bas�ld���nda bool de�i�kenini true yap
-          if (Input.GetKeyDown(KeyCode.E))
-          {
-              speedBoastActive = !speedBoastActive;
-          }
-
-
-
-          // Bool de�i�keni true oldu�unda sayac� art�r
-          if (speedBoastActive)
-          {
-              timer += Time.deltaTime;
-              if (timer >= duration)
-              {
-                  speedBoastActive = false;
-                  timer = 0f;
-              }
-          }*/
-    }
+      
+       }
 
     void healing()
     {
@@ -252,17 +237,27 @@ public class characterController : MonoBehaviour
     } //Iyile�me
     void ultiShoot()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFireTimeUlti)
         {
-            for (int i = 0; i < 18; i++)
+            nextFireTimeUlti = Time.time + fireDelayUlti;
+            // 8 yöne doğru birim vektörleri tanımlayalım
+            Vector2[] directions = { Vector2.up, Vector2.down, Vector2.right, Vector2.left,
+                                 new Vector2(1, 1).normalized, new Vector2(1, -1).normalized,
+                                 new Vector2(-1, 1).normalized, new Vector2(-1, -1).normalized };
+
+            // Mermileri 8 yöne doğru oluşturalım
+            foreach (Vector2 direction in directions)
             {
-                GameObject BulletPrefab = Instantiate(ultiBulletPrefab, transform.position, Quaternion.identity);
-                Rigidbody2D bulletRigidbody = BulletPrefab.GetComponent<Rigidbody2D>();
-                float angle = i * 20f;
-                bulletRigidbody.velocity = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad)) * bulletSpeed;
+                // Mermi pozisyonunu belirleyelim
+                Vector2 bulletPos = (Vector2)transform.position + direction;
+
+                // Mermiyi oluşturalım ve hızını ayarlayalım
+                GameObject bullet = Instantiate(ultiBulletPrefab, bulletPos, Quaternion.identity);
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                rb.velocity = direction * bulletSpeed;
             }
         }
-    } //ulti
+    } //ulti*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

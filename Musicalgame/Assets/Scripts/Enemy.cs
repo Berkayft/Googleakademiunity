@@ -43,29 +43,49 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-      
-    }
-
-
-    public void TakeDamage(float a,string isim)
-    {
-       if(dusmantipi == 0) {
-          enemyHealth -= a;
-       }else if(dusmantipi == 1 && isim == "Do"){
-          enemyHealth -= a;   
-       }else if(dusmantipi == 2 && isim == "Re") {
-          enemyHealth -= a;
-       }else if(dusmantipi == 3 && isim == "Mi") {
-          enemyHealth -= a;  
-       }else if(isim == "Sol") {
-          enemyHealth -= a;
-       }
-       
-       if (enemyHealth <= 0)
+        if (enemyHealth <= 0)
         {
             Destroy(gameObject);
-        }   
+        }
     }
 
 
+        public void TakeDamage(float a, string isim)
+        {
+            if (dusmantipi == 0)
+            {
+                enemyHealth -= a;
+            }
+            else if (dusmantipi == 1 && isim == "Do")
+            {
+                enemyHealth -= a;
+            }
+            else if (dusmantipi == 2 && isim == "Re")
+            {
+                enemyHealth -= a;
+            }
+            else if (dusmantipi == 3 && isim == "Mi")
+            {
+                enemyHealth -= a;
+            }
+            else if (isim == "Sol")
+            {
+                enemyHealth -= a;
+            }
+
+            if (enemyHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+    public void ultiDamage(int damage)
+    {
+        enemyHealth -= damage;
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }

@@ -11636,8 +11636,8 @@ GameObject:
   - component: {fileID: 1189177790}
   - component: {fileID: 1189177789}
   - component: {fileID: 1189177792}
-  - component: {fileID: 1189177788}
   - component: {fileID: 1189177793}
+  - component: {fileID: 1189177788}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -11666,7 +11666,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8513595210482802425, guid: fd6b6cb952d647c44be0f860e6b9f05a, type: 3}
   firePoint: {fileID: 217848898}
   bulletSpeed: 15
-  fireRate: 1
+  fireRate: 0.25
   speedBoastActive: 0
   boastSpeed: 20
   cooldown: 10
@@ -11676,6 +11676,7 @@ MonoBehaviour:
   healthPoints: 5
   ultiBulletPrefab: {fileID: 3247919331477446963, guid: 01696c00ff83ade4d83b3f0170cc44c0, type: 3}
   ultiBulletSpeed: 0.5
+  fireDelayUlti: 10
   hud: {fileID: 596122126}
   mainhortumzaman: 10
   mainhortumcooldown: 50
