@@ -11638,6 +11638,7 @@ GameObject:
   - component: {fileID: 1189177792}
   - component: {fileID: 1189177793}
   - component: {fileID: 1189177788}
+  - component: {fileID: 1189177794}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -11820,6 +11821,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1189177794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189177787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faac1fd7821706c45bb7ee35b30b140f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 10
+  bulletPrefab: {fileID: -3798141367334631459, guid: 01696c00ff83ade4d83b3f0170cc44c0, type: 3}
+  numBullets: 8
+  bulletSpeed: 10
 --- !u!1 &1251401053
 GameObject:
   m_ObjectHideFlags: 0
@@ -12456,7 +12473,7 @@ MonoBehaviour:
   damage: 1
   target: {fileID: 1189177791}
   player: {fileID: 1189177787}
-  enemyHealth: 20
+  enemyHealth: 200
   dusmantipi: 2
   maksuzaklik: 50
   spawnpoint: {fileID: 1694210099}
