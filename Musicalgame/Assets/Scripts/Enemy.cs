@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 3f; // d��man�n h�z�
-    public int damage = 1; // d��man�n verdi�i hasar
+    public float speed = 3f;
+    public int damage = 1; 
 
-    [SerializeField] Transform target; // oyuncunun pozisyonu
+    [SerializeField] Transform target; 
     private Rigidbody2D rb;
 
-    public float enemyHealth = 20; // D��man�n can�
+    public float enemyHealth = 20; 
 
     public int dusmantipi;
     public float maksuzaklik;
-    public Transform spawnpoint;
-
+  
 
     void Start()
     {
@@ -26,14 +25,14 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 direction = target.position - rb.transform.position; // oyuncuya do�ru y�n
+        Vector2 direction = target.position - rb.transform.position; 
         if(direction.magnitude > maksuzaklik){
             Vector2 gotospawnpoint = transform.position - rb.transform.position;
             rb.velocity = gotospawnpoint.normalized * speed;
         }else {
             float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
             rb.rotation = angle - 90f;
-            rb.velocity = direction.normalized * speed; // h�z� ayarla
+            rb.velocity = direction.normalized * speed; 
             
         }
 

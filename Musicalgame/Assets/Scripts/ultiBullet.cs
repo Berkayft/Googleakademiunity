@@ -42,8 +42,12 @@ public class ultiBullet : MonoBehaviour
             Destroy(gameObject); // mermiyi yok et
             collision.gameObject.GetComponent<Enemy>().ultiDamage(damage); // düþman canýný azalt
         }
-      
-      
+        else if (collision.gameObject.CompareTag("Boss"))
+        {
+            Destroy(gameObject); // mermiyi yok et
+        }
+        
+
     }
 }
 

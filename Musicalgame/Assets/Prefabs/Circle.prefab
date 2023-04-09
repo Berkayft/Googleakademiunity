@@ -9769,7 +9769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   donushizi: 50
-  player: {fileID: 0}
+  player: {fileID: 2713299146469162140, guid: 5a970502b12d77048ae66eff149d679b, type: 3}
+  damage: 10
 --- !u!1 &6300264206871828095
 GameObject:
   m_ObjectHideFlags: 0

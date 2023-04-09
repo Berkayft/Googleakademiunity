@@ -123,8 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   damage: 1
-  target: {fileID: 0}
-  player: {fileID: 0}
+  target: {fileID: 2713299146469162136, guid: 5a970502b12d77048ae66eff149d679b, type: 3}
   enemyHealth: 20
   dusmantipi: 1
   maksuzaklik: 50
