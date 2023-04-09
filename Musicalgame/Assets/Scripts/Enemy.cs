@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
     public int damage = 1; // d��man�n verdi�i hasar
 
     [SerializeField] Transform target; // oyuncunun pozisyonu
-    [SerializeField] GameObject player;
     private Rigidbody2D rb;
 
     public float enemyHealth = 20; // D��man�n can�
@@ -87,5 +86,6 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
     
 }
