@@ -13,6 +13,6 @@ public class SahneYukleyici : MonoBehaviour
 
     public void SahneYukle()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("levelSecme");
     }
 }
