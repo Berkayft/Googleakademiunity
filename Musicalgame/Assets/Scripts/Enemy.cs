@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     {
         Vector2 direction = target.position - rb.transform.position; // oyuncuya do�ru y�n
         if(direction.magnitude > maksuzaklik){
-            Vector2 gotospawnpoint = transform.position - rb.transform.position;
+            Vector2 gotospawnpoint = spawnpoint.position - rb.transform.position;
             rb.velocity = gotospawnpoint.normalized * speed;
         }else {
             float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
