@@ -7,10 +7,12 @@ public class HUDkontrol : MonoBehaviour
 {
     public characterController cc;
     public Xskill xs;
+    public Bosscontrol bs;
     public Slider skill1;
     public Slider skill2;
     public Slider skill3;
     public Slider skill4;
+    public Slider bosscan;
     public Text potionsayi;
     
     public Slider healthbar;
@@ -36,6 +38,7 @@ public class HUDkontrol : MonoBehaviour
         skill2.value = cc.hortumyaratmaslider;
         skill3.value = cc.ultislider;
         skill4.value = xs.slidervalue;
+        bosscan.value = bs.heal;
         // healing ve ulti için gelince buralar yapılacak
         healthbar.value = cc.heal;
         potionsayi.text = cc.healthPoints.ToString();

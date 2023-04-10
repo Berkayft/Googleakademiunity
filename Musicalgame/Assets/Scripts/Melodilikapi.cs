@@ -48,6 +48,7 @@ public class Melodilikapi : MonoBehaviour
     void Open() {
         //kapinin animasyon ve colliderini kapatma kısmı burada olacak
         bc.enabled = false;
+        Destroy(gameObject);
     }
     // nota ile carpisinca gelen notanin ismini alabilmek için 
     void OnCollisionEnter2D(Collision2D other) {
@@ -102,27 +103,11 @@ public class Melodilikapi : MonoBehaviour
             if(gelennota == nota5) {
                 dogrunota ++;
                 sayac = sayacmain;
-                gelennota = null;
-            }else {
-                gelennota = null;
-                dogrunota = 0;
-            }
-        }else if(dogrunota == 5) {
-            if(gelennota == nota6) {
-                dogrunota ++;
-                sayac = sayacmain;
-                gelennota = null;
-            }else {
-                gelennota = null;
-                dogrunota = 0;
-            }
-        }else if(dogrunota == 6) {
-            if(gelennota == nota7) {
-                dogrunota ++;
-                sayac = sayacmain;
                 kapiacildimi = true;
                 Open();
+                gelennota = null;
             }else {
+                gelennota = null;
                 dogrunota = 0;
             }
         }
