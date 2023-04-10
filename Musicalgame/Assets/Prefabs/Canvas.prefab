@@ -148,6 +148,8 @@ MonoBehaviour:
   kitap: {fileID: 8925132449397634538}
   bulunankagitlar: 00000000
   datas: {fileID: 0}
+  Hud: {fileID: 0}
+  Bosscanbar: {fileID: 0}
 --- !u!1 &8925132447834790642
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7fa52bbc91ef264ea644217dd3b0f9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b0f930724efbd146aea6787b1ecca89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2197,8 +2199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 240, y: 360}
+  m_AnchoredPosition: {x: 6.592804, y: 2.4733}
+  m_SizeDelta: {x: 226.81, y: 302.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8925132448669071444
 CanvasRenderer:
@@ -2228,7 +2230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7fa52bbc91ef264ea644217dd3b0f9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae4ce82b24039e645aa0bcb6b88f8d1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

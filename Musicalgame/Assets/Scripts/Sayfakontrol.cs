@@ -9,6 +9,8 @@ public class Sayfakontrol : MonoBehaviour
     public GameObject kitap;
     public bool[] bulunankagitlar;
     public Globaldatas datas;
+    public GameObject Hud;
+    public GameObject Bosscanbar;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +28,13 @@ public class Sayfakontrol : MonoBehaviour
             if(kitap.activeSelf == false) {
                 Time.timeScale = 0;
                 kitap.SetActive(true);
+                Bosscanbar.SetActive(false);
+                Hud.SetActive(false);
             }else {
                 Time.timeScale = 1;
                 kitap.SetActive(false);
+                Bosscanbar.SetActive(true);
+                Hud.SetActive(true);
             }
         }
     }
