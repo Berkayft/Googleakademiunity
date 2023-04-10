@@ -485,7 +485,7 @@ MonoBehaviour:
   mermiprefab: {fileID: 963886949648128644, guid: 079955b2b721683479ee402a2b30b2c7, type: 3}
   anamermizaman: 2
   spawnerpoint: {fileID: 633360535}
-  bulletspeed: 9
+  bulletspeed: 10
   heal: 1000
 --- !u!212 &61245660
 SpriteRenderer:
