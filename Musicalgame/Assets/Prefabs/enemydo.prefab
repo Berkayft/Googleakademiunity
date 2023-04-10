@@ -124,11 +124,11 @@ MonoBehaviour:
   speed: 3
   damage: 1
   target: {fileID: 0}
-  player: {fileID: 0}
   enemyHealth: 20
   dusmantipi: 1
   maksuzaklik: 50
   spawnpoint: {fileID: 0}
+  effect: {fileID: 7055943926142687196, guid: e09ec111eca9bd848b221fbb327c5190, type: 3}
 --- !u!70 &8933281247417806140
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

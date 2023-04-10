@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public int dusmantipi;
     public float maksuzaklik;
     public Transform spawnpoint;
+    public GameObject effect;
 
 
     void Start()
@@ -74,6 +75,7 @@ public class Enemy : MonoBehaviour
 
             if (enemyHealth <= 0)
             {
+                Instantiate(effect,transform.position,transform.rotation);
                 Destroy(gameObject);
             }
         }
@@ -83,6 +85,7 @@ public class Enemy : MonoBehaviour
         enemyHealth -= damage;
         if (enemyHealth <= 0)
         {
+            Instantiate(effect,transform.position,transform.rotation);
             Destroy(gameObject);
         }
     }

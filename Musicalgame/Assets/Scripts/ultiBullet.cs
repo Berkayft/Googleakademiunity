@@ -18,7 +18,7 @@ public class ultiBullet : MonoBehaviour
 
     void Start()
     {
-        //bunlar simdilik böyle null da oyunu test ederken none olarak kalýnca bazen hata veriyo
+        //bunlar simdilik bï¿½yle null da oyunu test ederken none olarak kalï¿½nca bazen hata veriyo
         dogruefekt = null;
         yanlisefekt = null;
         notaninsesi = null;
@@ -40,7 +40,10 @@ public class ultiBullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject); // mermiyi yok et
-            collision.gameObject.GetComponent<Enemy>().ultiDamage(damage); // düþman canýný azalt
+            collision.gameObject.GetComponent<Enemy>().ultiDamage(damage); // dï¿½ï¿½man canï¿½nï¿½ azalt
+        }else if(collision.gameObject.CompareTag("Boss")) {
+            Destroy(gameObject); // mermiyi yok et
+            collision.gameObject.GetComponent<Bosscontrol>().TakeDamageboss(damage);
         }
       
       
