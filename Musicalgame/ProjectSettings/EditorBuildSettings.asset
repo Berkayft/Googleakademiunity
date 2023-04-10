@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/levelSecme.unity
     guid: 2a929f7a1f5fd744c84b88c7bc6d54c1
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 3538e99a0bed3c34e88524df8b1d8ac7
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: b99e33f3aa9ec604b9f42cb582f0a45c
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 2ca766e51696d644dbe60b56c143794d
   m_configObjects: {}

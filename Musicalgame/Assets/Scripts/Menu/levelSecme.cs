@@ -12,8 +12,21 @@ public class levelSecme : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void levelYukle()
+    public void levelYukle1()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void levelYukle2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    public void levelYukle3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+    public void levelYukle4()
+    {
+        SceneManager.LoadScene("Level4");
     }
 }
